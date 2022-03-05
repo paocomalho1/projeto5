@@ -1,0 +1,19 @@
+@use "../utilitarios" as *;
+
+.fundo{
+    background-color: $azul-dark;
+    height: 100vh;
+    @include flex-cc;
+    flex-direction: column;
+    @include celular{
+        height: 2300px;
+    }
+}
+.attribution{
+    position: relative;
+    top: 20px;
+    color: $branco;
+}
+.attribution a{
+    color: $branco;
+}

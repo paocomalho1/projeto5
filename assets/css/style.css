@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@keyframes slide-in {
+  from {
+    top: -80%;
+  }
+  to {
+    top: 19%;
+  }
+}
+@keyframes slide-out {
+  from {
+    top: 19%;
+  }
+  to {
+    top: -80%;
+  }
+}
+@keyframes slide-in-t {
+  from {
+    top: -84.6%;
+  }
+  to {
+    top: 14.4%;
+  }
+}
+@keyframes slide-out-t {
+  from {
+    top: 14.4%;
+  }
+  to {
+    top: -84.6%;
+  }
+}
+.fundo {
+  background-color: #0f1424;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 767.98px) {
+  .fundo {
+    height: 2300px;
+  }
+}
+
+.attribution {
+  position: relative;
+  top: 20px;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+}
+
+.conteiner {
+  width: 70%;
+  margin-right: 7rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner {
+    width: 100%;
+    margin-right: 0rem;
+  }
+}
+.conteiner__principal {
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__principal {
+    width: calc(90% - 2rem);
+  }
+}
+.conteiner__violeta {
+  background-color: #5847eb;
+  padding: 2rem;
+  height: calc(70% - 3.65rem);
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 2rem);
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__violeta {
+    display: flex;
+    align-items: center;
+  }
+}
+.conteiner__img {
+  width: 33.3%;
+  margin-bottom: 3rem;
+  border: white solid 3px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__img {
+    width: 22%;
+    height: 75px;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+.conteiner__report {
+  margin-bottom: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #bdc1ff;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__report {
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+  }
+}
+.conteiner__nome {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: white;
+  text-align: justify;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__nome {
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+  .conteiner__nome {
+    font-size: 1.6rem;
+  }
+}
+.conteiner__azul {
+  height: calc(30% - 3.65rem);
+  background-color: #1c1f4a;
+  padding: 2rem;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+  bottom: 10px;
+  width: calc(100% - 2rem);
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__azul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+.conteiner__d-w-m {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #bdc1ff;
+  margin-bottom: 1rem;
+  display: flex;
+  text-decoration: none;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__d-w-m {
+    margin: 0;
+  }
+  .conteiner__d-w-m:first-child {
+    margin-top: 0.625rem;
+  }
+}
+.conteiner__d-w-m:last-child {
+  margin-bottom: 0rem;
+}
+.conteiner__d-w-m:hover {
+  color: white;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "principal work study play" "principal exercise social self-care";
+  gap: 2rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+.conteiner__principal {
+  grid-area: principal;
+}
+.conteiner__enfeite {
+  height: 21.5%;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__enfeite {
+    height: 64px;
+  }
+}
+.conteiner__item {
+  background-color: #1c1f4a;
+  border-radius: 12px;
+  padding: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  height: 57%;
+  position: relative;
+  bottom: 10px;
+  z-index: 1;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__item {
+    padding-bottom: 1rem;
+  }
+}
+.conteiner__item:hover {
+  background-color: #292f70;
+  cursor: pointer;
+}
+.conteiner__work {
+  grid-area: work;
+}
+.conteiner__play {
+  grid-area: play;
+}
+.conteiner__study {
+  grid-area: study;
+}
+.conteiner__exercise {
+  grid-area: exercise;
+}
+.conteiner__social {
+  grid-area: social;
+}
+.conteiner__self-care {
+  grid-area: self-care;
+}
+.conteiner__titulo-conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+.conteiner__titulo {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+  .conteiner__titulo {
+    padding-bottom: 0.2rem;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__horas-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1rem;
+  }
+}
+.conteiner__horas {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__horas {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+  .conteiner__horas {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+}
+.conteiner__last-week {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #bdc1ff;
+}
+@media only screen and (max-width: 767.98px) {
+  .conteiner__last-week {
+    margin-top: 0rem;
+    position: relative;
+    bottom: 6px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+  .conteiner__last-week {
+    font-size: 1rem;
+  }
+}
+
+.laranja {
+  background-color: #ff8c66;
+}
+.laranja::before {
+  content: url(../images/icon-work.svg);
+  margin-right: 1rem;
+}
+
+.azul {
+  background-color: #56c2e6;
+}
+.azul::before {
+  content: url(../images/icon-play.svg);
+  margin-right: 1rem;
+}
+
+.vermelho {
+  background-color: #ff5c7c;
+}
+.vermelho::before {
+  content: url(../images/icon-study.svg);
+  margin-right: 1rem;
+}
+
+.verde {
+  background-color: #4acf81;
+}
+.verde::before {
+  content: url(../images/icon-exercise.svg);
+  margin-right: 1rem;
+}
+
+.violeta {
+  background-color: #7536d3;
+}
+.violeta::before {
+  content: url(../images/icon-social.svg);
+  margin-right: 1rem;
+}
+
+.amarelo {
+  background-color: #f1c65b;
+}
+.amarelo::before {
+  content: url(../images/icon-self-care.svg);
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .item {
+    width: 90%;
+  }
+}
+
+body {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

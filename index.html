@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+  <main class="fundo">
+    <div class="conteiner">
+      <div class="conteiner__principal">
+        <div class="conteiner__violeta">
+          <img src="./assets/images/image-jeremy.png" alt="" class="conteiner__img">
+          <div class="conteiner__nome-conteiner">
+            <p class="conteiner__report">Report for</p>
+            <h1 class="conteiner__nome">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="conteiner__azul">
+          <a href="#" class="conteiner__d-w-m" onclick="daily()">Daily</a>
+          <a href="#" class="conteiner__d-w-m" onclick="weekly()">Weekly</a>
+          <a href="#" class="conteiner__d-w-m" onclick="monthly()">Monthly</a>
+        </div>
+      </div>
+        <div class="conteiner__work item">
+          <div class="conteiner__enfeite laranja">
+          </div>
+          <div class="conteiner__item">
+          <div class="conteiner__titulo-conteiner">
+            <h3 class="conteiner__titulo">Work</h3>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="continer__titulo-3p"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="conteiner__horas-conteiner">
+          <h2 class="conteiner__horas">5hrs</h2>
+          <p class="conteiner__last-week">Previous - 7hrs</p>
+        </div>
+        </div>
+        </div>
+        <div class="conteiner__play item">
+          <div class="conteiner__enfeite azul">
+          </div>
+          <div class="conteiner__item">
+          <div class="conteiner__titulo-conteiner">
+            <h3 class="conteiner__titulo">Play</h3>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="continer__titulo-3p"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="conteiner__horas-conteiner">
+          <h2 class="conteiner__horas">1hr</h2>
+          <p class="conteiner__last-week">Previous - 2hrs</p>
+          </div>
+        </div>
+        </div>
+        <div class="conteiner__study item">
+          <div class="conteiner__enfeite vermelho">
+          </div>
+          <div class="conteiner__item">
+          <div class="conteiner__titulo-conteiner">
+            <h3 class="conteiner__titulo">Study</h3>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="continer__titulo-3p"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="conteiner__horas-conteiner">
+          <h2 class="conteiner__horas">0hrs</h2>
+          <p class="conteiner__last-week">Previous - 1hr</p>
+        </div>
+        </div>
+        </div>
+        <div class="conteiner__exercise item">
+          <div class="conteiner__enfeite verde">
+          </div>
+          <div class="conteiner__item">
+          <div class="conteiner__titulo-conteiner">
+            <h3 class="conteiner__titulo">Exercise</h3>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="continer__titulo-3p"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="conteiner__horas-conteiner">
+          <h2 class="conteiner__horas">1hr</h2>
+          <p class="conteiner__last-week">Previous - 1hr</p>
+        </div>
+        </div>
+        </div>
+        <div class="conteiner__social item">
+          <div class="conteiner__enfeite violeta">
+          </div>
+          <div class="conteiner__item">
+          <div class="conteiner__titulo-conteiner">
+            <h3 class="conteiner__titulo">Social</h3>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="continer__titulo-3p"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="conteiner__horas-conteiner">
+          <h2 class="conteiner__horas">1hr</h2>
+          <p class="conteiner__last-week">Previous - 3hrs</p>
+        </div>
+        </div>
+        </div>
+        <div class="conteiner__self-care item">
+          <div class="conteiner__enfeite amarelo">
+          </div>
+          <div class="conteiner__item">
+          <div class="conteiner__titulo-conteiner">
+            <h3 class="conteiner__titulo">Self Care</h3>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="continer__titulo-3p"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="conteiner__horas-conteiner">
+          <h2 class="conteiner__horas">0hrs</h2>
+          <p class="conteiner__last-week">Previous - 1hr</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Erick</a>.
+    </div>
+  </main>
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
+  
+  <!---->
+
