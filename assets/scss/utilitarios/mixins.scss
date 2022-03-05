@@ -5,7 +5,10 @@
     @media only screen and (max-width: 767.98px){ @content;}
 }
 @mixin tablet {
-    @media only screen and (min-width: 768.00px) and (max-width: 1150.00px){ @content;}
+    @media only screen and (min-width: 768.00px) and (max-width: 1023.98px){ @content;}
+}
+@mixin desktop {
+    @media only screen and (min-width: 1024.00px) and (max-width: 1150.00px){ @content;}
 }
 @mixin flex-jc {
     display: flex;

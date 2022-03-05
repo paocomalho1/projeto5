@@ -12,8 +12,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
         margin-top: 2rem;
         width: 100%;
+        margin-left: 2rem;
+        flex-wrap: wrap;
+        
     }
     &__principal{
         grid-area: principal;
@@ -24,6 +35,9 @@
         display: flex;
         justify-content: flex-end;
         @include celular{
+            height: 64px;
+        }
+        @include tablet{
             height: 64px;
         }
         
@@ -40,6 +54,9 @@
         bottom: 10px;
         z-index: 1;
         @include celular{
+            padding-bottom: 1rem;
+        }
+        @include tablet{
             padding-bottom: 1rem;
         }
         &:hover{
@@ -72,13 +89,19 @@
     }
     &__titulo{
         @include Rubik-500;
-        @include tablet{
+        @include desktop{
             padding-bottom: 0.2rem;
         }
         
     }
     &__horas-conteiner{
         @include celular{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 1rem;
+        }
+        @include tablet{
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
@@ -97,9 +120,15 @@
             font-size: 3.5rem;
         }
         @include tablet{
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+            font-size: 3.5rem;
+        }
+        @include desktop{
             font-size: 2.5rem;
             padding-bottom: 2rem;
         }
+
     }
     &__last-week{
         @include Rubik-300;
@@ -110,6 +139,11 @@
             bottom: 6px;
         }
         @include tablet{
+            margin-top: 0rem;
+            position: relative;
+            bottom: 6px;
+        }
+        @include desktop{
             font-size: 1rem;
         }
 
@@ -161,5 +195,8 @@
 .item{
     @include celular{
         width: 90%;
+    }
+    @include tablet{
+        width: calc(45% - 0.5rem);
     }
 }

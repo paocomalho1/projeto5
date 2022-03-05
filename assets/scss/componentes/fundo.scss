@@ -8,6 +8,9 @@
     @include celular{
         height: 1900px;
     }
+    @include tablet{
+        height: 1900px;
+    }
 }
 .attribution{
     position: relative;
